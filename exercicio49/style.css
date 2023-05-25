@@ -1,0 +1,60 @@
+.cont {
+  display: flex;
+}
+.pedido {
+  margin: 25px;
+  border: 1px black solid;
+  padding: 10px;
+}
+input {
+  width: 98%;
+}
+
+button {
+  padding: 5px 20px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+button:hover {
+  text-shadow: 150px 0px black, -150px 0px black, 0px -40px black,
+    0px 40px black, 150px 40px #04aa6d, -150px -40px #04aa6d, 150px -40px red,
+    -150px 40px rebeccapurple;
+  transition: 1s;
+  color: gold;
+  background-color: white;
+  padding: 10px 30px;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  width: 30%;
+  margin: 25px;
+}
+
+th {
+  background-color: #04aa6d;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#div {
+  border: 1px red solid;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+#div p {
+  font-size: 19px;
+}
