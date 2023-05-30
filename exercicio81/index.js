@@ -1,3 +1,4 @@
+const key = document.querySelector(".form-control");
 let tr = document.getElementById("tr");
 let menor = document.getElementById("menor");
 let btn = document.getElementById("btn");
@@ -41,7 +42,7 @@ function criarTabela() {
 function menorF() {
   let idade = parseInt(document.getElementById("inpIdade").value);
 
-  if (idade < 18) {
+  if (idade >= 18) {
     arrM.push(idade);
     console.log(arrM);
 
@@ -49,7 +50,7 @@ function menorF() {
     for (let m = 0; m < arrM.length; m++) {
       menor.innerHTML = `
         <tr>
-          <th>Total de menores de 18:</th>
+          <th>Total de maiores de 18:</th>
           <td colspan="3">${arrM.length}</td>
         </tr>
       `;
@@ -57,4 +58,11 @@ function menorF() {
   }
 }
 
+function press() {
+  if (event.key == "Enter") {
+    cadastrat();
+  }
+}
+
+key.addEventListener("keydown", press);
 btn.addEventListener("click", cadastrat);
