@@ -1,4 +1,4 @@
-const key = document.querySelector(".form-control");
+const key = document.querySelectorAll(".form-control");
 let tr = document.getElementById("tr");
 let menor = document.getElementById("menor");
 let btn = document.getElementById("btn");
